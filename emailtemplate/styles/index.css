@@ -5,6 +5,11 @@
   overflow-x: hidden;
   font-family: "Inter", sans-serif;
   margin: 0;
+  padding: 0;
+}
+
+*::after, *::before{
+  box-sizing: border-box;
 }
 
 header,
@@ -94,7 +99,7 @@ main {
   margin-top: 5rem;
   height: 200px;
   padding-bottom: 3rem;
-  background: linear-gradient(318.64deg, #ac0606 72.73%, rgba(222, 52, 52, 0.4) 96.54%);
+  background: linear-gradient(45deg, #ac0606 55%, rgba(222, 52, 52, 0.4) 96%);
   border-radius: 8px;
 }
 
@@ -151,6 +156,25 @@ p.creditAmount {
   line-height: 22px;
 }
 
+.channelsBreakdown{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* from span to div styling */
+.transactionChannels{
+  border: 1px solid #d84e4e;
+  border-radius: .2em;
+  width: 45%;
+  margin: .2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: .2rem; */
+  /* height: 5rem; */
+}
+
 p.debitAmount {
   color: white;
   font-size: 24px;
@@ -173,26 +197,25 @@ p.debitAmount {
   line-height: 14.52px;
 }
 
-.channelsBreakdown {
+/* .channelsBreakdown {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-}
+} */
 
-.usedChannels {
+/* .usedChannels {
   display: flex;
   justify-content: space-between;
   padding: 0.7rem;
-}
+} */
 
-.usedChannels span {
+/* .usedChannels span {
   margin-top: -0.25rem;
   border: 1px solid #d71920;
   display: inline-block;
   padding: 0 1rem;
   border-radius: 8px;
-  color: #d71920;
-}
+} */
 
 .atmTransaction,
 .oneBankTransaction,
@@ -216,7 +239,15 @@ p.debitAmount {
 .web,
 .pos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  /* border: 2px solid green; */
+  margin: 0;
+  padding-left: .5rem;
+  color: #d71920;
+  /* position: relative; */
+  /* height: 40%; */
 }
 
 .atm p,
@@ -225,8 +256,10 @@ p.debitAmount {
 .onePay p,
 .web p,
 .pos p {
-  display: inline-block;
+  /* display: inline-block; */
   font-style: italic;
+  /* border: 2px solid green; */
+  margin: 0;
 }
 
 .atm img {
@@ -311,7 +344,7 @@ p.debitAmount {
 }
 
 .calendar {
-  background: url(/images/activemonthimg.png);
+  background: url(../images/activemonthimg.png);
   background-repeat: no-repeat;
   width: auto;
   height: 88px;
