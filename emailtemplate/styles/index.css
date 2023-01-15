@@ -8,7 +8,12 @@
   padding: 0;
 }
 
-*::after, *::before{
+* {
+  margin: 0;
+}
+
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -17,19 +22,23 @@ main {
   margin: 0 20px;
 }
 
+.logo {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
 header img {
   width: 131px;
   height: 65px;
   left: 24px;
   top: 32px;
-  margin-left: -2rem;
+  margin-left: 0rem;
   object-fit: contain;
 }
 
 .yearReview {
   background: #f3f3f3;
-  border-radius: 2rem;
-  padding: 1em;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   height: 118px;
@@ -39,6 +48,7 @@ header img {
   width: 200px;
   height: 100px;
   object-fit: cover;
+  padding: 1rem;
 }
 
 #reviewPie {
@@ -55,6 +65,7 @@ main {
   font-weight: 600;
   font-size: 16px;
   line-height: 19.36px;
+  padding-bottom: 1rem;
 }
 
 .intro p {
@@ -73,14 +84,7 @@ main {
 }
 
 .activityIntro p {
-  margin-top: 2rem;
-  margin-left: 0.3rem;
-  position: absolute;
-  width: 327px;
-  height: 36px;
-  left: 24px;
-  top: 399px;
-
+  padding-top: 0.5rem;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -96,16 +100,14 @@ main {
 }
 
 .transactionWorth {
-  margin-top: 5rem;
+  margin-top: 0.5rem;
   height: 200px;
-  padding-bottom: 3rem;
+  padding: 24px 16px 0 0;
   background: linear-gradient(45deg, #ac0606 55%, rgba(222, 52, 52, 0.4) 96%);
   border-radius: 8px;
 }
 
 .transactionText {
-  margin: 0rem 1rem;
-
   color: white;
   position: absolute;
   left: 40px;
@@ -116,19 +118,21 @@ main {
 p.numberOfTransactions {
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 0rem;
+  padding: 16px 0;
 }
 
 p.transactionsAmount {
   font-size: 24px;
   font-weight: 700;
+  padding: 24px 0;
 }
 
 .creditDebitTransactions {
   background: black;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-radius: 20px;
   margin-top: -1.5rem;
+  height: auto;
 }
 
 .creditTransactions p {
@@ -138,6 +142,8 @@ p.transactionsAmount {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 p.creditAmount {
@@ -145,6 +151,7 @@ p.creditAmount {
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
+  padding-bottom: 16px;
 }
 
 .debitTransactions p {
@@ -154,20 +161,21 @@ p.creditAmount {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  padding-top: 24px;
 }
 
-.channelsBreakdown{
+.channelsBreakdown {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 /* from span to div styling */
-.transactionChannels{
+.transactionChannels {
   border: 1px solid #d84e4e;
-  border-radius: .2em;
+  border-radius: 0.2em;
   width: 45%;
-  margin: .2rem;
+  margin: 0.2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -180,6 +188,7 @@ p.debitAmount {
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
+  padding-bottom: 16px;
 }
 
 .channelSection {
@@ -244,7 +253,7 @@ p.debitAmount {
   flex-direction: column;
   /* border: 2px solid green; */
   margin: 0;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   color: #d71920;
   /* position: relative; */
   /* height: 40%; */
@@ -262,6 +271,13 @@ p.debitAmount {
   margin: 0;
 }
 
+.channelsBreakdown img {
+  width: 30px;
+  height: 15px;
+  object-fit: contain;
+}
+
+/* 
 .atm img {
   width: 20px;
   height: 15.21px;
@@ -278,19 +294,19 @@ p.debitAmount {
 }
 
 .onePay img {
-  width: 30px;
+  width: 10px;
   height: 9.38px;
 }
 
 .oneBank img {
-  width: 30px;
+  width: 10px;
   height: 6px;
 }
 
 .ussd img {
   width: 14px;
   height: 12px;
-}
+} */
 
 .mostUsedChannel {
   text-align: center;
@@ -298,7 +314,7 @@ p.debitAmount {
   background: #333333;
   border-radius: 10px;
   padding: 16px;
-  margin: 40px;
+  margin: 40px 50px;
 }
 
 .mostUsedChannel h2 {
@@ -308,6 +324,7 @@ p.debitAmount {
   font-weight: 500;
   line-height: 29px;
   font-family: "Lato", sans-serif;
+  padding: 1rem;
 }
 
 .mostUsedChannel div {
@@ -362,6 +379,10 @@ p.debitAmount {
   line-height: 29px;
 }
 
+.mostActiveMonthtext {
+  padding: 1.2rem 0.5rem;
+}
+
 .mostActiveMonthtext h4 {
   font-family: "Inter";
   font-style: normal;
@@ -379,15 +400,13 @@ p.debitAmount {
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  padding-top: 1.5rem;
 }
 
 .incurredAtmCharges {
-  height: 193px;
-  left: 24px;
-  top: 1596px;
   background: #000000;
   border-radius: 8px;
-  padding: 1rem;
+  padding: 2rem 1rem 0;
 }
 
 .incurredAtmCharges h4 {
@@ -397,6 +416,7 @@ p.debitAmount {
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
+  padding-right: 5rem;
 }
 
 .incurredAtmCharges span {
@@ -410,6 +430,7 @@ p.debitAmount {
   font-size: 10px;
   line-height: 150%;
   color: #ffffff;
+  padding-top: 8px;
 }
 
 .incurredAtmCharges a {
@@ -419,6 +440,7 @@ p.debitAmount {
   font-size: 10px;
   line-height: 150%;
   color: #efbd10;
+  padding-top: 7px;
 }
 
 .incurredAtmCharges div {
@@ -436,11 +458,11 @@ p.debitAmount {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  margin-top: 3rem;
+  margin-top: 2rem;
   background: #eff7fc;
   border-radius: 8px;
   height: auto;
-  padding: 1rem;
+  padding: 24px 16px;
 }
 
 .beneficiaries h5 {
@@ -449,6 +471,7 @@ p.debitAmount {
   line-height: 19px;
   color: #333333;
   margin-bottom: 0rem;
+  padding: 16px 0;
 }
 
 .beneficiaries p {
@@ -456,6 +479,7 @@ p.debitAmount {
   font-size: 14px;
   line-height: 17px;
   color: #333333;
+  padding: 8px 0;
 }
 
 .nairaMatters {
@@ -477,7 +501,7 @@ p.debitAmount {
   line-height: 18px;
   color: #333333;
   text-align: justify;
-  padding: 0 0.5rem;
+  padding: 8px 0;
 }
 
 .investment {
@@ -515,6 +539,7 @@ p.debitAmount {
   color: #333333;
   text-align: right;
   margin: 0.5rem;
+  padding: 0;
 }
 
 .i-invest a {
@@ -530,7 +555,7 @@ p.debitAmount {
   height: auto;
   background: #faf6ea;
   border-radius: 8px;
-  padding: 0.5rem 1.5rem;
+  padding: 32px 0px 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -542,6 +567,7 @@ p.debitAmount {
   color: #bf8f11;
   padding: 0 1rem;
   margin-bottom: 1rem;
+  padding: 0 16px;
 }
 
 .visaCreditCard span {
@@ -579,7 +605,7 @@ p.debitAmount {
   border-radius: 8px;
   margin-top: 2rem;
   height: auto;
-  padding: 0.5rem 1.5rem;
+  padding: 24px 0 0 0;
   display: flex;
   flex-direction: column;
 }
@@ -625,15 +651,14 @@ p.debitAmount {
 .smeBankingImg {
   display: flex;
   justify-content: space-between;
-  padding-top: 1rem;
+  padding-top: 8px;
 }
 
 .doubble {
-  padding: 2rem;
+  padding: 24px 16px;
   background: #f5fbff;
   border-radius: 8px;
   margin-top: 2rem;
-  margin-bottom: 3rem;
 }
 
 .doubble h5 {
@@ -651,12 +676,15 @@ p.debitAmount {
   color: #035387;
 }
 
+.doubbleFindOut {
+  padding-top: 16px;
+}
+
 .doubbleImg p {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   display: flex;
-  align-items: center;
   color: #333333;
 }
 
@@ -674,7 +702,7 @@ p.debitAmount {
 .doubbleImg img {
   width: 81px;
   height: 18px;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .productChannels {
@@ -738,16 +766,24 @@ p.debitAmount {
 footer {
   background: #242424;
   padding-bottom: 2rem;
-  margin: -1rem 0;
+  margin: 0 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .customerCenter {
   display: flex;
-  margin: 0 2rem;
+  padding-top: 29px;
 }
 
 .customerCenterdiv {
   padding: 0 0.5rem;
+}
+
+.customerCenter img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
 }
 
 .customerCenter h6 {
@@ -755,7 +791,6 @@ footer {
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
-  margin: 0 0;
 }
 
 .customerCenter p {
@@ -763,17 +798,16 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-top: 0.5rem;
 }
 
 .customerCenterContact {
   display: flex;
   justify-content: space-between;
-  margin: 0 2rem;
+  margin: 0 0rem;
 }
 
 .contactNumber {
-  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .customerCenterContact p {
@@ -824,6 +858,7 @@ footer {
   height: 24px;
 }
 
+<<<<<<< HEAD
 /* Media queries */
 
 /* 
@@ -833,3 +868,224 @@ For Laptop or small-size screen: 768px -1024px
 For Desktop or large-size screen: 1024px -1200px
 For Extra-large size device: 1200px and more
 */
+=======
+/* iphone 13 mini */
+@media only screen and (min-width: 375px) and (max-width: 376px) {
+  .transactionChannels {
+    border: 1px solid #d84e4e;
+    border-radius: 0.2em;
+    width: 45%;
+    margin: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: .2rem; */
+    /* height: 5rem; */
+  }
+
+  .transactionChannels img {
+    visibility: hidden;
+  }
+
+  .atm,
+  .oneBank,
+  .ussd,
+  .onePay,
+  .web,
+  .pos {
+    color: white;
+  }
+
+  #atmTransactions {
+    background: #b90006;
+    border-radius: 5px;
+  }
+
+  #oneBankTransactions {
+    background: #d84e4e;
+    border-radius: 5px;
+  }
+
+  #ussdTransactions {
+    background: #c7161c;
+    border-radius: 5px;
+  }
+
+  #onePayTransactions {
+    background: #fba9ac;
+    border-radius: 5px;
+  }
+
+  #webTransactions {
+    background: #6c0003;
+    border-radius: 5px;
+  }
+
+  #posTransactions {
+    background: #e76266;
+    border-radius: 5px;
+  }
+
+  .mostUsedChannel {
+    text-align: center;
+    height: max-content;
+    background: #333333;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 40px 30px;
+  }
+}
+
+/* Galazy fold */
+@media only screen and (min-width: 280px) and (max-width: 281px) {
+  .container {
+    width: 100vw;
+  }
+
+  .intro p {
+    font-size: 13px;
+  }
+
+  .activityIntro p {
+    font-size: 12px;
+  }
+
+  .intro span {
+    font-size: 15px;
+  }
+
+  .transactionWorth {
+    width: auto;
+  }
+
+  .channelsBreakdown {
+    font-size: 10px;
+  }
+
+  .channelsBreakdown img {
+    width: 15px;
+  }
+
+  p.transactionsAmount {
+    font-size: 19px;
+    font-weight: 700;
+    padding: 24px 0;
+  }
+
+  p.creditAmount {
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 29px;
+    padding-bottom: 16px;
+  }
+
+  p.debitAmount {
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 29px;
+    padding-bottom: 16px;
+  }
+
+  .mostUsedChannel {
+    text-align: center;
+    height: max-content;
+    background: #333333;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 10px;
+  }
+
+  .mostActiveMonthtext {
+    padding: 1.2rem 0;
+  }
+
+  .mostActiveMonth {
+    padding: 0 8px;
+  }
+
+  .calendar {
+    padding: 1rem;
+    margin: 0.7rem;
+  }
+
+  .incurredAtmCharges {
+    padding: 2rem 1rem 0;
+  }
+
+  .incurredAtmCharges h4 {
+    padding-right: 0;
+  }
+
+  .i-invest p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+  }
+
+  .i-invest h5 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+    margin: 0;
+  }
+
+  .doubbleImg p {
+    font-size: 10px;
+  }
+
+  .doubble h5 {
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  .doubble span {
+    font-size: 15px;
+  }
+
+  .smeBanking h5 {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .smeBanking span {
+    font-size: 15px;
+  }
+
+  .productChannels {
+    margin: 2rem 0;
+    padding: 0 0rem;
+  }
+
+  .customerCenterContact {
+    margin: 1rem 0;
+  }
+
+  .customerCenterContact p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .customerCenterContact a {
+    font-size: 10px;
+  }
+
+  .customerCenterdiv {
+    padding: 0;
+  }
+
+  .contactNumber {
+    padding: 0;
+  }
+
+  .footerdiv {
+    padding: 2rem 1rem;
+  }
+}
+>>>>>>> ea6ffb684c99886e01458b1d57a6d271253720b1
