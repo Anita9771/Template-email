@@ -858,6 +858,17 @@ footer {
   height: 24px;
 }
 
+<<<<<<< HEAD
+/* Media queries */
+
+/* 
+For Mobile devices: 320px-480px
+For Tablets or iPad: 480px - 768px
+For Laptop or small-size screen: 768px -1024px
+For Desktop or large-size screen: 1024px -1200px
+For Extra-large size device: 1200px and more
+*/
+=======
 /* iphone 13 mini */
 @media only screen and (min-width: 375px) and (max-width: 376px) {
   .transactionChannels {
@@ -1077,3 +1088,4 @@ footer {
     padding: 2rem 1rem;
   }
 }
+>>>>>>> ea6ffb684c99886e01458b1d57a6d271253720b1
