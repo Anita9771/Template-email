@@ -47,6 +47,7 @@
               <p class="numberOfTransactions">108</p>
               <p>Transactions worth</p>
               <p class="transactionsAmount">₦1,454,425,732.88</p>
+              <p class="hidden-text">Did you know that since January 2020, transfer <br>fees are now cheaper? <a href="#">Learn More</a></p>
             </div>
           </div>
 
@@ -66,6 +67,11 @@
         </section>
 
         <!-- channels section -->
+        <!-- <div>
+          <p class="channelsIntro">
+            Breakdown of your used channels for the year
+          </p>
+        </div> -->
         <section class="channelSection">
           <div>
             <p class="channelsIntro">
@@ -73,65 +79,67 @@
             </p>
           </div>
 
-          <div class="channelsBreakdown">
-            <!-- transaction channels -->
-            <!-- I took out span cause it is inline and will not allow the flex for desktop -->
-            <!-- I gave each transaction div an id to style each background color for the iphone 13 mini screen -->
-            <div id="atmTransactions" class="transactionChannels">
-              <div class="atm">
-                <p class="atmTransaction">50 Transactions</p>
-                <p>ATM</p>
+          <div class="channelsWrap">
+            <div class="channelsBreakdown">
+              <!-- transaction channels -->
+              <!-- I took out span cause it is inline and will not allow the flex for desktop -->
+              <!-- I gave each transaction div an id to style each background color for the iphone 13 mini screen -->
+              <div id="atmTransactions" class="transactionChannels">
+                <div class="atm">
+                  <p class="atmTransaction">50 Transactions</p>
+                  <p>ATM</p>
+                </div>
+                <div><img src="./images/atming.png" alt="" /></div>
               </div>
-              <div><img src="./images/atming.png" alt="" /></div>
-            </div>
-
-            <div id="oneBankTransactions" class="transactionChannels">
-              <div class="oneBank">
-                <p class="oneBankTransaction">20 Transactions</p>
-                <p>OneBank</p>
+  
+              <div id="oneBankTransactions" class="transactionChannels">
+                <div class="oneBank">
+                  <p class="oneBankTransaction">20 Transactions</p>
+                  <p>OneBank</p>
+                </div>
+                <div><img src="./images/onebankimg.png" alt="" /></div>
               </div>
-              <div><img src="./images/onebankimg.png" alt="" /></div>
-            </div>
-
-            <div id="ussdTransactions" class="transactionChannels">
-              <div class="ussd">
-                <p class="ussdTransaction">50 Transactions</p>
-                <p>USSD</p>
+  
+              <div id="ussdTransactions" class="transactionChannels">
+                <div class="ussd">
+                  <p class="ussdTransaction">50 Transactions</p>
+                  <p>USSD</p>
+                </div>
+                <div><img src="./images/ussdimg.png" alt="" /></div>
               </div>
-              <div><img src="./images/ussdimg.png" alt="" /></div>
-            </div>
-
-            <div id="onePayTransactions" class="transactionChannels">
-              <div class="onePay">
-                <p class="onePayTransaction">20 Transactions</p>
-                <p>OnePay</p>
+  
+              <div id="onePayTransactions" class="transactionChannels">
+                <div class="onePay">
+                  <p class="onePayTransaction">20 Transactions</p>
+                  <p>OnePay</p>
+                </div>
+                <div><img src="./images/onepayimg.png" alt="" /></div>
               </div>
-              <div><img src="./images/onepayimg.png" alt="" /></div>
-            </div>
-
-            <div id="webTransactions" class="transactionChannels">
-              <div class="web">
-                <p class="webTransaction">50 Transactions</p>
-                <p>WEB</p>
+  
+              <div id="webTransactions" class="transactionChannels">
+                <div class="web">
+                  <p class="webTransaction">50 Transactions</p>
+                  <p>WEB</p>
+                </div>
+                <div><img src="./images/webimg.png" alt="" /></div>
               </div>
-              <div><img src="./images/webimg.png" alt="" /></div>
-            </div>
-
-            <div id="posTransactions" class="transactionChannels">
-              <div class="pos">
-                <p class="posTransaction">20 Transactions</p>
-                <p>POS</p>
+  
+              <div id="posTransactions" class="transactionChannels">
+                <div class="pos">
+                  <p class="posTransaction">20 Transactions</p>
+                  <p>POS</p>
+                </div>
+                <div><img src="./images/posimg.png" alt="" /></div>
               </div>
-              <div><img src="./images/posimg.png" alt="" /></div>
             </div>
-          </div>
-
-          <!-- Most Used Channel -->
-          <div>
-            <div class="mostUsedChannel">
-              <h2>Most Used Channel</h2>
-              <div>
-                <p>One<span>Bank</span></p>
+  
+            <!-- Most Used Channel -->
+            <div>
+              <div class="mostUsedChannel">
+                <h2>Most Used Channel</h2>
+                <div>
+                  <p>One<span>Bank</span></p>
+                </div>
               </div>
             </div>
           </div>
@@ -206,11 +214,11 @@
             </div>
 
             <div class="i-invest">
-              <h5>Do you know you can invest up to</h5>
-              <h5><span>₦150,420</span> on our I-Invest app?</h5>
+              <h5>Do you know you can invest up to
+              <span>₦150,420</span> on our I-Invest app?</h5>
 
-              <p id="investmentPortfolio">Build your investment portfolio.</p>
-              <p>Download the <a href="">mobile app</a> today.</p>
+              <p id="investmentPortfolio">Build your investment portfolio.
+              Download the <a href="">mobile app</a> today.</p>
             </div>
           </div>
         </div>
@@ -227,7 +235,8 @@
             </p>
           </div>
           <div class="visaCardImg">
-            <img src="./images/visacardimg.png" alt="" />
+            <img id="visaCardSmall" src="./images/visacardimg.png" alt="" />
+            <img id="visaCardLarge" src="./images/visacardlarge.png" alt="visa card for large screen">
           </div>
         </div>
 
@@ -250,18 +259,16 @@
         <!-- Doubble -->
         <div class="doubble">
           <div>
-            <h5>Based on your current financial health, you</h5>
-            <h5>
+            <h5>Based on your current financial health, you
               could have
               <span>₦700,420</span>
               using our
-            </h5>
-            <h5>Doubble app to grow your wealth by 200%!</h5>
+              Doubble app to grow your wealth by 200%!</h5>
           </div>
           <div class="doubbleImg">
             <div class="doubbleFindOut">
-              <p>Want to find out how?</p>
-              <p><a href="">Get started </a> now!</p>
+              <p>Want to find out how? <span class="getStartedLarge"><a href="">Get started </a>now</span></p>
+              <p id="getStartedSmall"><a href="">Get started </a> now!</p>
             </div>
             <img src="./images/doubble.png" alt="" />
           </div>
