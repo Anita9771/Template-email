@@ -858,7 +858,10 @@ footer {
   height: 24px;
 }
 
-.hidden-text, #visaCardLarge, .getStartedLarge{
+.hidden-text,
+#visaCardLarge,
+.getStartedLarge,
+.socialLinksTop {
   display: none;
 }
 
@@ -937,7 +940,7 @@ For Extra-large size device: 1200px and more
     margin: 40px 30px;
   }
 
-  .hidden-text{
+  .hidden-text {
     display: none;
   }
 }
@@ -1094,15 +1097,14 @@ For Extra-large size device: 1200px and more
     padding: 2rem 1rem;
   }
 
-  .hidden-text{
+  .hidden-text {
     display: none;
   }
 }
 
 /* For Tablets or iPad screen to Large screens*/
-@media only screen and (min-width: 768px){
-
-  .yearReview #yearReviewImg{
+@media only screen and (min-width: 768px) {
+  .yearReview #yearReviewImg {
     width: 30rem;
     height: 20rem;
     /* object-fit: cover; */
@@ -1110,12 +1112,12 @@ For Extra-large size device: 1200px and more
     padding: 4rem 0 0 0;
   }
 
-  .yearReview{
+  .yearReview {
     height: 11rem;
     align-items: center;
   }
 
-  .activitySection{
+  .activitySection {
     display: flex;
     /* border: 2px solid green; */
     flex-direction: row;
@@ -1125,35 +1127,35 @@ For Extra-large size device: 1200px and more
     /* height: 100%; */
   }
 
-  .transactionWorth{
+  .transactionWorth {
     /* border: 2px solid green; */
     margin: 0;
     width: 100%;
     height: 15rem;
-    border-radius: .2rem 0 0 .2rem;
+    border-radius: 0.2rem 0 0 0.2rem;
   }
 
-  .transactionText{
+  .transactionText {
     /* color: #000000; */
   }
 
-  .hidden-text{
+  .hidden-text {
     display: inherit;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
-  .hidden-text a{
+  .hidden-text a {
     color: white;
   }
 
-  .creditDebitTransactions{
-    border-radius: 2rem .2rem .2rem 2rem;
+  .creditDebitTransactions {
+    border-radius: 2rem 0.2rem 0.2rem 2rem;
     margin: 0;
     z-index: 3;
     margin-left: -2rem;
   }
 
-  .channelsWrap{
+  .channelsWrap {
     /* border: 2px solid green; */
     display: flex;
     justify-content: flex-start;
@@ -1161,13 +1163,13 @@ For Extra-large size device: 1200px and more
     padding-bottom: 1rem;
   }
 
-  .channelsIntro{
+  .channelsIntro {
     /* text-align: start; */
     /* border: 2px solid green;  */
     /* margin-left: 1rem; */
   }
 
-  .channelsBreakdown{
+  .channelsBreakdown {
     margin: 0 0 0 1rem;
     padding: 0;
     /* border: 2px solid green; */
@@ -1175,66 +1177,64 @@ For Extra-large size device: 1200px and more
   }
 
   .atmTransaction,
-.oneBankTransaction,
-.ussdTransaction,
-.onePayTransaction,
-.webTransaction,
-.posTransaction {
-  font-weight: 700;
-  font-size: .8rem;
-}
-
-  .transactionChannels{
-    width: 30%;
-    height: 4rem;
-
+  .oneBankTransaction,
+  .ussdTransaction,
+  .onePayTransaction,
+  .webTransaction,
+  .posTransaction {
+    font-weight: 700;
+    font-size: 0.8rem;
   }
 
-  .mostUsedChannel h2{
-    font-size: .7rem;
+  .transactionChannels {
+    width: 30%;
+    height: 4rem;
+  }
+
+  .mostUsedChannel h2 {
+    font-size: 0.7rem;
     width: 100%;
     line-height: 12px;
     padding: 0;
     text-align: center;
-    padding-bottom: .2rem;
+    padding-bottom: 0.2rem;
   }
 
-  .mostUsedChannel p{
+  .mostUsedChannel p {
     font-size: 1rem;
   }
 
-  .mostUsedChannel{
+  .mostUsedChannel {
     width: 100%;
     /* border: 2px solid green; */
     margin: 0 0 0 2rem;
-    border-radius: .2rem;
+    border-radius: 0.2rem;
     height: auto;
-
   }
 
-  .mostUsedChannel div{
+  .mostUsedChannel div {
     height: 100%;
-    border-radius: .2rem;
+    border-radius: 0.2rem;
   }
 
-  .activityDetails{
+  .activityDetails {
     flex-direction: row;
     justify-content: space-between;
     /* border: 2px solid green; */
   }
 
-  .mostActiveMonth{
+  .mostActiveMonth {
     /* border: 2px solid green; */
     height: auto;
     margin: 0 1rem 0 0;
   }
 
-  .beneficiaries{
+  .beneficiaries {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .investment{
+  .investment {
     font-size: 1rem;
     width: 100%;
     /* border: 2px solid green; */
@@ -1242,26 +1242,28 @@ For Extra-large size device: 1200px and more
     align-items: center;
   }
 
-  .investment img{
+  .investment img {
     width: 15rem;
     height: 17rem;
     object-fit: contain;
   }
 
-  .i-invest{
+  .i-invest {
     /* border: 2px solid green; */
     /* width: 70%; */
     /* text-align: justify; */
   }
 
-  .visaCreditCard div h5, .smeBanking div h5, .doubble div h5{
+  .visaCreditCard div h5,
+  .smeBanking div h5,
+  .doubble div h5 {
     font-size: 1.2rem;
     /* border: 2px solid green; */
     width: 85%;
     line-height: 32px;
   }
 
-  .visaCreditCard{
+  .visaCreditCard {
     /* border: 2px solid green; */
     flex-direction: row;
   }
@@ -1273,49 +1275,257 @@ For Extra-large size device: 1200px and more
     /* align-items: flex-start; */
   }
 
-  #visaCardSmall, #getStartedSmall{
+  #visaCardSmall,
+  #getStartedSmall {
     display: none;
   }
 
-  #visaCardLarge, .smeBankingImg img{
+  #visaCardLarge,
+  .smeBankingImg img,
+  .doubbleImg img {
     width: 15rem;
     height: 10rem;
-    object-fit: contain; 
+    object-fit: contain;
     padding: 0;
     display: inline;
     /* border: 2px solid green; */
   }
 
-  .smeBankingImg img{
+  .smeBankingImg img {
     margin-top: -6rem;
   }
 
-  .smeBanking{
-  /* flex-direction: row; */
+  .doubbleImg img {
+    margin-top: -1rem;
+    padding: 0;
+    margin-bottom: 0;
+    /* border: 2px solid green; */
+    width: 10rem;
+    height: 5rem;
   }
 
-  .smeBankingImg{
+  .smeBanking {
     /* flex-direction: row; */
   }
 
-  .doubble div h5{
+  .smeBankingImg {
+    /* flex-direction: row; */
+  }
+
+  .doubble div h5 {
     width: 70%;
     line-height: 40px;
     /* border: 2px solid green; */
   }
 
-  .getStartedLarge{
+  .getStartedLarge {
     display: inline;
   }
 
-  .doubbleFindOut p{
+  .doubbleFindOut p {
     /* border: 2px solid green; */
     align-items: center;
   }
 
-  .doubbleFindOut span{
+  .doubbleImg {
+    padding-bottom: 0;
+  }
+
+  .doubbleFindOut span {
     font-weight: normal;
     font-size: 12px;
     color: #000000;
+  }
+
+  .productChannels {
+    width: 70%;
+    /* border: 2px solid green; */
+    margin: auto;
+    padding: 1rem 0;
+  }
+
+  .customerCenterdiv p,
+  .contactNumber {
+    color: gray;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  .socialLinksTop {
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: center;
+  }
+
+  .socialLinksTop img {
+    margin-left: 0.5rem;
+  }
+
+  .socialLinksGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 0 5rem;
+    /* border: 2px solid green; */
+  }
+
+  .socialLinks {
+    justify-content: space-around;
+    display: flex;
+    /* border: 2px solid green; */
+    align-items: center;
+    margin-left: 0.2rem;
+  }
+
+  .socialLinksGroup img {
+    margin-left: 0.5rem;
+  }
+}
+
+/* For Desktop or large-size screen */
+@media only screen and (min-width: 1024px) {
+  .creditDebitTransactions {
+    /* margin-left: -10rem; */
+    width: 80%;
+  }
+
+  .mostUsedChannel {
+    margin-left: 80%;
+    height: 8rem;
+  }
+
+  .mostUsedChannel div {
+    height: 90%;
+  }
+
+  .mostUsedChannel div p {
+    font-size: 1.5rem;
+  }
+
+  .nairaMatters p {
+    font-size: 1.2rem;
+    line-height: 32px;
+  }
+
+  .i-invest h5 {
+    font-size: 1.4rem;
+  }
+
+  .visaCreditCard div h5,
+  .smeBanking div h5,
+  .doubble div h5 {
+    font-size: 1.5rem;
+    /* border: 2px solid green; */
+    width: 100%;
+    line-height: 40px;
+  }
+
+  #visaCardLarge,
+  .smeBankingImg img {
+    width: 20rem;
+    height: 15rem;
+    object-fit: contain;
+  }
+
+  .productChannels img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+  }
+}
+
+/* For Desktop or larger screen */
+@media only screen and (min-width: 1440px) {
+  .transactionChannels {
+    height: 7rem;
+    /* width: 35%; */
+  }
+
+  .mostUsedChannel {
+    width: 20rem;
+    margin: 0 0 0 3rem;
+    height: 100%;
+  }
+
+  .mostUsedChannel h2 {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+
+  .mostUsedChannel div p {
+    font-size: 2.5rem;
+  }
+
+  .channelsIntro,
+  .intro h1,
+  .intro p,
+  .activityIntro p,
+  .mostActiveMonth h4,
+  .incurredAtmCharges h4,
+  .mostActiveMonth p,
+  .incurredAtmCharges p,
+  .calendar p,
+  .beneficiaries h5,
+  .beneficiaries p,
+  .visaCreditCard div p,
+  .smeBankingImg p,
+  .doubbleFindOut p {
+    font-size: 1.2rem;
+    line-height: 32px;
+  }
+
+  .atmTransaction,
+  .oneBankTransaction,
+  .ussdTransaction,
+  .onePayTransaction,
+  .webTransaction,
+  .posTransaction {
+    font-size: 1.2rem;
+  }
+
+  .channelsBreakdown img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+  }
+
+  .activityDetails {
+    /* border: 2px solid green; */
+    /* justify-content: space-between; */
+  }
+
+  .mostActiveMonth,
+  .incurredAtmCharges {
+    margin: 0;
+    width: 47%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .incurredAtmCharges div img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+  }
+
+  .mostActiveMonth {
+    justify-content: center;
+  }
+
+  .investment div img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+  }
+
+  .doubble div h5{
+    width: 70%;
+  }
+
+  .visaCardImg img{
+    margin-left: 20rem;
   }
 }
